@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.org/dtd/hibernate-mapping.dtd">
+
+<hibernate-mapping>
+	<class name="com.lpa.ems.employee.entities.Employee" table="employee">
+		<id name="id" column="id">
+			<generator class="identity"/>
+		</id>
+		<property name="ename" column="ename"/>
+		<property name="email" column="email"/>
+		<property name="gender" column="gender"/>
+		<property name="dob" column="dob"/>
+		<property name="qualification" column="qualification"/>
+		<property name="status" column="status"/>
+	</class>
+</hibernate-mapping>
